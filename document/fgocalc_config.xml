@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fgocalc>
+    <!-- 版本编号 -->
+    <version value="v1.5.1"></version>
+
+    <!-- 下载地址 -->
+    <path value="http://nj005py.gitee.io/fgocalc/"></path>
+
+    <!--更新内容-->
+    <update value="1更新数据至195号萝莉；2玄学计算器改欧非检测仪；3加入数据库单独更新功能；4其它优化"></update>
+</fgocalc>
