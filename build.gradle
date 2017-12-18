@@ -16,11 +16,12 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
+//apply plugin: 'war'
 apply plugin: 'org.springframework.boot'
 
 
 jar {
-    baseName = 'gs-rest-service'
+    baseName = 'fgocalc-rest-service'
     version =  '0.1.0'
 }
 
@@ -31,10 +32,14 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+configurations {
+    compile.exclude module: "spring-boot-starter-tomcat"
+}
 
 dependencies {
 	compileOnly 'org.projectlombok:lombok:1.16.18'
 	apt "org.projectlombok:lombok:1.16.18"
-    compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile('org.s	pringframework.boot:spring-boot-starter-test')
+//    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
