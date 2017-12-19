@@ -1,6 +1,7 @@
 # FGOcalc_API
 ======
-## Welcome to FGOcalc API
+Welcome to FGOcalc API
+======
 This is the background API for android app FGOcalc.
 And maybe the background of FGOcalc's Web version and IOS version in distant future.
 
