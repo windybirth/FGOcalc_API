@@ -5,12 +5,13 @@ And maybe the background of FGOcalc's Web version and IOS version in distant fut
 
 ## How to use in clinet
 RESTful API
-
+~~~
 Now
 In construction...
 Usage Sample:
 http://fgocalc.phantancy.org/api/v1/test
 
+~~~
 ## How to start in service
 1. Install Java 8 and Gradle if you haven't yet:
 
@@ -21,10 +22,7 @@ http://fgocalc.phantancy.org/api/v1/test
         chmod +x release.sh
         $ ./release.sh
    Service will stand in port 80 automatically, also you can run/stop it manually with start.sh/stop.sh
-~~~
 
-
-~~~
 ## Contributing
 We encourage you to contribute to FGOcalc API!
 
