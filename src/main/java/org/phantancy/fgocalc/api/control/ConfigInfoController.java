@@ -13,8 +13,8 @@ public class ConfigInfoController {
 
     @RequestMapping(method=RequestMethod.GET)
     public Response<ConfigInfo> configInfo(@RequestParam(value="name", defaultValue="World") String name) {
-    	ConfigInfo configInfo = new ConfigInfo("v1.5.1","http://nj005py.gitee.io/fgocalc/",
-        		"1更新数据至195号萝莉；2玄学计算器改欧非检测仪；3加入数据库单独更新功能；4其它优化");
+    	ConfigInfo configInfo = new ConfigInfo("v1.5.2","http://nj005py.gitee.io/fgocalc/",
+        		"1更新数据至198号萝莉；2修改宝具计算器错误；3简化载入外置数据库操作；4buff设置增加梅天狸快捷buff");
     	Response<ConfigInfo> response = new Response<ConfigInfo>("Success", null, configInfo);
         return response;
     }
