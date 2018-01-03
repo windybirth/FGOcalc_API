@@ -13,7 +13,7 @@ public class TestController {
 
     @RequestMapping(method=RequestMethod.GET)
     public Response<ConfigInfo> testGet(@RequestParam(value="name", defaultValue="World") String name) {
-    	ConfigInfo configInfo = new ConfigInfo("v1.5.1","http://nj005py.gitee.io/fgocalc/",
+    	ConfigInfo configInfo = new ConfigInfo("v1.5.2","http://nj005py.gitee.io/fgocalc/",
         		"This is test message.");
     	Response<ConfigInfo> response = new Response<ConfigInfo>("Success", null, configInfo);
         return response;
@@ -21,7 +21,7 @@ public class TestController {
     
     @RequestMapping(method=RequestMethod.PUT)
     public Response<ConfigInfo> testPUT(@RequestParam(value="name", defaultValue="World") String name) {
-    	ConfigInfo configInfo = new ConfigInfo("v1.5.1","http://nj005py.gitee.io/fgocalc/",
+    	ConfigInfo configInfo = new ConfigInfo("v1.5.2","http://nj005py.gitee.io/fgocalc/",
         		"This is response of PUT");
     	Response<ConfigInfo> response = new Response<ConfigInfo>("Success", null, configInfo);
         return response;
