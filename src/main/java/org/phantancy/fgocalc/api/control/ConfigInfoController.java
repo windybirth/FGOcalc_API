@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.minidev.json.writer.UpdaterMapper;
-
 @RestController
 @RequestMapping("/configInfo")
 public class ConfigInfoController {
